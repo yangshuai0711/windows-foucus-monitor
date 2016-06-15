@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 
 namespace com.mocoder.tools.focus_monitor
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private string preStr = "";
         [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
@@ -37,7 +37,7 @@ namespace com.mocoder.tools.focus_monitor
             out int pid
         );
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
